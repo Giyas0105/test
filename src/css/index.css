@@ -149,6 +149,7 @@ a:visited {
 
 .container {
   max-width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -192,6 +193,9 @@ a:visited {
   gap: 60px;
   color: #ffffff;
 }
+.menu__item_active {
+  color: #43abf0;
+}
 .menu__item-link {
   cursor: pointer;
   transition: color 0.2s;
@@ -206,4 +210,91 @@ a:visited {
   top: 0;
   right: 0;
   left: 0;
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.main {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 890px;
+}
+.main__container-wrapper {
+  background-image: url(../assets/images/header-bg.png);
+  background-repeat: no-repeat;
+}
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  padding-top: 100px;
+  color: #fff;
+  min-height: 790px;
+  width: 100%;
+}
+.main__body {
+  max-width: 780px;
+  margin-top: 103px;
+  color: #000000;
+}
+.main__title {
+  font-size: 48px;
+  font-weight: 800px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+.main__subtitle {
+  font-size: 48px;
+  font-weight: 800px;
+  margin-bottom: 80px;
+}
+.main__subtitle-name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main__subtitle__list {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  list-style-type: "-";
+  list-style-position: inside;
+}
+.main__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.main__buttons-link {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 183px;
+  height: 43px;
+  cursor: pointer;
+}
+.main__buttons-buy {
+  color: #ffffff;
+  background: #3e9cdc;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+.main__buttons-title {
+  color: #2a2b30;
+  background: #ffffff;
+  border: 1px solid #6f6d7b;
+  border-radius: 4px;
 }/*# sourceMappingURL=index.css.map */
