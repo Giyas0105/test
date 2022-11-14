@@ -9,12 +9,24 @@
 	margin: 0;
 	padding: 0;
 	background: rgba(16, 16, 29, 0.9);
+	flex: 0 0 auto;
+
+	@media (max-width: $screen-sm-max) {
+		position: relative;
+		height: 100vh;
+	}
 
 	&__container {
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 		height: 100%;
+
+		@media (max-width: $screen-sm-max) {
+			flex-direction: column;
+			justify-content: space-around;
+		}
 	}
 
 	&__logo-link {
@@ -32,7 +44,6 @@
 		}
 	}
 }
-
 .menu {
 	&__inner {
 		display: flex;
@@ -40,6 +51,21 @@
 		align-items: center;
 		gap: 60px;
 		color: #ffffff;
+
+		@media (max-width: $screen-sm-max) {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		@media (min-width: $screen-md) {
+			flex-direction: row;
+		}
+		@media (min-width: $screen-lg) {
+			flex-direction: row;
+		}
+		@media (min-width: $screen-lg-max) {
+			flex-direction: row;
+		}
 	}
 
 	&__item_active {
