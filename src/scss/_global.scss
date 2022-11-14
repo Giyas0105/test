@@ -1,4 +1,7 @@
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -13,7 +16,19 @@ a:visited {
 }
 
 .container {
-	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
+
+	@media (max-width: $screen-sm-max) {
+		max-width: 500px;
+	}
+	@media (min-width: $screen-md) {
+		max-width: 700px;
+	}
+	@media (min-width: $screen-lg) {
+		max-width: 800px;
+	}
+	@media (min-width: $screen-lg-max) {
+		max-width: 900px;
+	}
 }
