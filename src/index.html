@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Тестовое задание</title>
 		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<script type="text/javascript" src="./js/main.js"></script>
 	</head>
 
 	<body class="page">
@@ -183,7 +184,13 @@
 											<label style="text-align: left" for="procent">
 												Sed ut perspiciatis, unde omnis iste natus
 											</label>
-											<label style="text-align: right" for="procent">75%</label>
+											<span
+												id="procentlabel"
+												style="text-align: right"
+												for="procent"
+											>
+											</span
+											><span class="">%</span>
 										</div>
 										<div class="order__form__range">
 											<input
@@ -255,5 +262,14 @@
 				</div>
 			</div>
 		</footer>
+		<script>
+			var procent = document.getElementById('procent')
+			var procentlabel = document.getElementById('procentlabel')
+			procentlabel.innerHTML = procent.value
+
+			procent.oninput = function () {
+				procentlabel.innerHTML = this.value
+			}
+		</script>
 	</body>
 </html>
